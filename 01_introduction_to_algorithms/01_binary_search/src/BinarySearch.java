@@ -1,4 +1,5 @@
 public class BinarySearch {
+
     private static Integer binarySearch(int[] list, int item) {
         int low = 0;
         int high = list.length - 1;
@@ -10,7 +11,6 @@ public class BinarySearch {
             if (guess == item) {
                 return mid;
             }
-
             if (guess > item) {
                 high = mid - 1;
             } else {
