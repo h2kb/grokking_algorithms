@@ -1,3 +1,5 @@
+package Ch01_introduction_to_algorithms;
+
 public class BinarySearch {
 
     private static Integer binarySearch(int[] list, int item) {
@@ -11,6 +13,7 @@ public class BinarySearch {
             if (guess == item) {
                 return mid;
             }
+
             if (guess > item) {
                 high = mid - 1;
             } else {
